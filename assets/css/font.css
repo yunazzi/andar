@@ -1,0 +1,22 @@
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');

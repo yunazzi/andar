@@ -1,0 +1,118 @@
+/* container */
+
+/* sc-visual */
+/* 메인슬라이드에 있는 스와이퍼에는 높이가 없음 */
+.sc-visual .main-slide{min-width: 320px; min-height: 400px; height: calc(100vh - 140px); object-fit: cover; position: relative;}
+.sc-visual .swiper img{width: 100%; height: 100%; object-fit: cover;}
+.sc-visual .swiper .txt-wrap{ position: absolute; padding: 100px 37px; bottom: 0; left: 0; color: #fff; }
+.sc-visual .swiper .title{ font-weight: 700; font-size: 28px; line-height: 1.3; letter-spacing: -1.5px; }
+.sc-visual .swiper .desc{ font-weight: 400; padding-top: 15px; font-size: 17px; line-height: 1.4; letter-spacing: -0.5px; }
+.sc-visual .pagination{ display: flex; position: absolute; bottom: 37px; left: 50%; transform: translateX(-50%); z-index: 1; width: 260px; /* background: #f00; */ }
+.sc-visual .pagination .swiper-pagination-bullet{ flex: 1; height: 2px; border-radius: 0; margin: 0; background: #fff; }
+
+
+/* 공통으로 들어가는 값 */
+.headline{ text-align: center; font-size: 20px; line-height: 29px; letter-spacing: -0.05em; font-weight: 700; }
+
+.product-list .product-item{ position: relative; }
+.product-list .link{ position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.product-list .desc-wrap{ padding: 15px 10px 50px; }
+.product-list .review{ margin-top: 6px; color: #8e1f29; font-size: 13px; font-weight: 700; line-height: 1; position: relative; z-index: 1; }
+.product-list .title{ padding: 10px 0; font-size: 13px; letter-spacing: -0.05em; }
+.product-list .price{ display: flex; }
+.product-list .price .sale{ color: #8E1F29; font-weight: bold; margin-right: 5px; font-size: 15px; }
+.product-list .price .curr{ font-style: 15px; font-weight: 500; letter-spacing: -0.03em; }
+.product-list .price .ori{ color: #8d8d8d; font-size: 13px; font-weight: 400; margin-left: 5px; text-decoration: line-through; }
+
+.product-list .add-box{ display: flex; gap: 5px; flex-wrap: wrap; margin: 10px 0; }
+.product-list .add-box span{ border: 1px solid rgba(142,31,41,0.5); color: #8E1F28; padding: 5px 6px 4px 6px; font-size: 10px; line-height: 1; width: max-content; }
+.product-list .add-box img{ height: 21px; margin: 10px 0 6px; }
+.product-list .add-box img+span{ display: block; }
+
+.product-list .thumb-box{ position: relative; }
+.product-list .thumb-box .rank{ position: absolute; top: 0; left: 0; background: #000; color: #fff; width: 30px; height: 30px; font-size: 15px; font-weight: 500; line-height: 30px; text-align: center; }
+.product-list .thumb-box .prd-img{ width: 100%; }
+.product-list .thumb-box .icon{ position: absolute; top: 0; right: 0; width: 16%; height: 37px; min-width: 38px; }
+.product-list .thumb-box .icon img{ width: 100%; }
+/* .product-list .box-wrap{display: flex; gap: 5px;} */
+
+/* product layout */
+.product-list.type1{ display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+.product-list.type2{ padding: 0 16px; }
+.product-list.type2 .product-item{ display: flex; padding: 20px 0; }
+.product-list.type2 .product-item+.product-item{ border-top: 1px solid #eee; }
+.product-list.type2 .thumb-box{ width: 110px; }
+.product-list.type2 .desc-wrap{ padding: 0 28px; }
+.product-list.type2 .thumb-box .icon{ position: absolute; top: 0; right: 0; width: 16%; height: 37px; min-width: 30px; }
+.product-list.type2 .add-box{ flex-direction: column; align-items: flex-start; gap: 0; }
+.product-list.type2 .add-box span{ margin: 0; }
+iframe{ border: none; }
+.group-theme+.group-theme{ padding-top: 40px; }
+
+.link-more{ display: flex; justify-content: center; gap: 3px; margin: 0 16px 60px; padding: 16px 0; border: 1px solid #c8cbd2; font-size: 15px; font-weight: 500;}
+.link-more span{color: #C86733;}
+.link-more::after { display: inline-block; content: ""; background: url(https://m.andar.co.kr/iv/arrow_right.png); background-repeat: no-repeat; width: 16px; height: 15px; margin-left: 2px; margin-top: 1px;}
+
+
+/* .sc-best */
+.sc-best{height: auto; position: relative; width: 100%;}
+.sc-best .headline{ text-align: center; padding: 50px 16px 22px; font-size: 20px; line-height: 29px; letter-spacing: -0.05em; font-weight: 700; }
+
+.sc-best .best-list{display: flex; justify-content: center; gap: 10px; padding: 0 22px 16px;}
+.sc-best .best-item{width: auto; color: #77797E; display: block; /* padding: 13px 10px;  */}
+.sc-best .best-item.active{ font-weight: 700; color: #FFFFFF; background: #B75622; border-radius: 60px; /* padding: 9px 10px; */ }
+.sc-best .best-item a{ display: inline-block; padding: 9px 10px; font-size: 15px; line-height: normal; }
+
+.sc-best .tabcon{display: none;}
+.sc-best .tabcon.active{display: block;}
+
+/* sc-banner */
+.sc-banner1{margin-bottom: 20px;}
+.sc-banner1 img{width: 100%;}
+
+/* sc-theme */
+.group-theme .intro-area img{width: 100%;}
+.group-theme .intro-area .desc-wrap{padding: 20px 16px 20px;}
+.group-theme .intro-area .title{ font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
+.group-theme .intro-area .desc{ padding: 14px 0 28px; font-size: 16px; line-height: 26px; letter-spacing: -0.05em; color: #333; font-weight: 400; }
+.group-theme .intro-area .btn-more{ display: flex; align-items: center; gap: 10px; background-color: #1e1e1e; border-radius: 2px; border: 1px solid #1e1e1e; color: #fff; padding: 10px 20px; font-size: 14px; line-height: 20px; letter-spacing: -0.03em; font-weight: 500; width: max-content; }
+.group-theme .intro-area .btn-more::after{ display: block; content: ""; background-image: url(../images/Icon_move.png); background-repeat: no-repeat; background-size: 15px auto; width: 15px; height: 15px; margin-top: 3px; }
+
+/* sc-recom */
+.sc-recom .headline{ font-size: 20px; padding: 50px 1% 22px; line-height: 29px; letter-spacing: -0.05em; text-align: center; font-weight: bold; }
+.sc-recom .recomm-slide{position: relative;}
+.sc-recom .pagination{ display: flex; position: absolute; background: #e4e4e4; width: 120px; height: 2px; left: 50%; bottom: 10px; transform: translateX(-50%); }
+.sc-recom .pagination .swiper-pagination-bullet{ flex: 1; height: 2px; border-radius: 0; margin: 0; background: #000; }
+
+/* sc-new */
+.sc-new .headline{font-size: 20px; padding: 50px 1% 22px; line-height: 29px; letter-spacing: -0.05em; text-align: center; font-weight: bold;}
+.sc-new .btn-more{padding: 0 16px 60px; width: 100%;}
+.sc-new .btn-more a{display: flex; gap: 3px; justify-content: center; width: 100%; padding: 16px 0; border: 1px solid #C8CBD2; border-radius: 4px; font-weight: 500; font-size: 14px; line-height: 120%; color: #000; }
+.sc-new .btn-more a::after{display: block; content: ""; background-image: url(../images/arrow_right.png); background-repeat: no-repeat; width: 16px; height: 16px; margin-top: -1.5px; }
+.sc-new .btn-more a::before{content: "신상"; color: #222; }
+
+/* sc-brand */
+.sc-brand{padding: 56px 20px; background-color: #C86733; margin: 20px 0;}
+.sc-brand .headline{ color: #fff; font-size: 18px; letter-spacing: -0.5px; margin: 0 auto 10px; font-weight: 400; display: inline-block; border-bottom: 1.5px solid #fff; padding-bottom: 5px; line-height: 1.2;}
+.sc-brand .title{display: block; font-size: 30px; line-height: 36px; letter-spacing: -0.03em; color: #fff; font-weight: 700; }
+.sc-brand .desc{ padding: 10px 0 5px; font-size: 12px; line-height: 1.4; color: #fff; letter-spacing: -0.02em; font-weight: 400; }
+.sc-brand .btn-more{ display: inline-block; width: 100px; margin-top: 20px; padding: 10px 0; font-size: 12px; line-height: 14px; letter-spacing: -0.03em; font-weight: 500; color: #fff; text-align: center; border: 1px solid #fff; }
+
+/* sc-cate */
+.sc-cate{margin-bottom: 70px;}
+.group-cate{margin-left: 20px; position: relative;}
+.group-cate .headline{ display: inline-block; padding: 20px 0; font-size: 20px; line-height: 24px; color: #333; font-weight: 600; }
+.group-cate .cate-more{ position: absolute; top: 30px; right: 20px; display: flex; align-items: center; gap: 3px; }
+.group-cate .cate-more::after{ display: block; content: ""; background: url(https://m.andar.co.kr/common/mo/icon-move-gr.png); background-repeat: no-repeat; width: 15px; height: 11px; background-size: 15px auto; }
+
+
+/* sc-info */
+.sc-info{position: relative; color: #fff;}
+.sc-info+.sc-info{ margin-top: 10px; }
+.sc-info a{ display: block; padding: 65px 20px; }
+.sc-info .bg{ position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; }
+.sc-info .title{ font-size: 26px; line-height: 31px; font-weight: 700; letter-spacing: -0.02em; color: #fff; text-align: left; }
+.sc-info p{ font-size: 15px; line-height: 1.4; letter-spacing: -0.02em; color: #fff; padding: 15px 0 30px; }
+.sc-info span{ border: 1px solid #fff; padding: 7px 25px 8px; color: #fff; font-size: 15px; line-height: 18px; letter-spacing: -0.03em; display: inline-block; }
+
+
