@@ -7,14 +7,12 @@
 .header .group-header{ display: flex; position: relative; height: 56px; }
 .header .group-header .logo{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .header .group-header [class*="btn-"]{ display: flex; align-items: center; justify-content: center; padding: 0 10px; }
-/* align-item을 사용하지않는 이유는 선택영역이 좁아져서 사용안함 */
 .header .group-header .btn-cart{ margin-left: auto;}
 
 
 .gnb{ display: none; } 
 .gnb .group-nav{ position: relative; background: #fff; height: 45px; }
 .gnb .group-nav .nav-list{ display: flex; gap: 12px; align-items: center; width: calc(100% - 60px); overflow-x: auto; height: 100%; padding-left: 15px; font-size: 16px; }
-/* 마우스클릭으로는 스크롤이 안되고, 손으로 터치해야 스크롤됨! */
 .gnb .group-nav .nav-list::-webkit-scrollbar { display: none;}
 .gnb .group-nav .btn-toggle{ background-image: url(../images/btn_open_middle_bk.png); background-repeat: no-repeat; width: 28px; height: 28px; background-position: center; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); /* background-size: 12px auto; background-position: center; */}
 .gnb .group-nav .all-text{ display: none; align-items: center; position: absolute; top: 0; left: 0; background: #fff; height: 100%; font-size: 16px; color: #000; padding: 0 16px; }
@@ -142,13 +140,6 @@
 .footer .mark-area li:nth-child(3) a{ width: 27px; }
 
 
-
-
-
-/* 56:19
-fix인 영역을 none-> block으로 바꿔
-화살표는 고정으로 박아두기
- */
 /* side-search */
 .side-search{ display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: url(https://m.andar.co.kr/web/andar/img/mobile/search-bg/231108.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; z-index: 99; }
 .side-search .search-close{ background: url(https://m.andar.co.kr/_wisa/img/button/close_search.png); background-repeat: no-repeat; background-size: 10px auto; position: absolute; top: 18px; left: 40px; width: 10px; height: 18px; }
@@ -162,34 +153,8 @@ fix인 영역을 none-> block으로 바꿔
 
 
 /* quick-menu */
-.quick-menu{
-    position: fixed;
-    width: 50px; 
-    bottom: 50px; right: 10px;
-    border: 1px solid #e9e9e9;
-    background-color: rgba(255, 255, 255, .7);
-    z-index: 99;
-    transition: all .4s .3s;
-    visibility: hidden;
-    opacity: 0;
-}
-.quick-menu.on{
-    visibility: visible;
-    opacity: 1;
-}
-.quick-menu .btn-chat{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 10px;
-    font-size: 11px;
-    border-bottom: 1px solid #e9e9e9;
-    color: #595959;
-}
-.quick-menu .btn-chat img{
-    padding-bottom: 10px;
-}
-.quick-menu .btn-gotop{
-    padding: 15px;
-}
+.quick-menu{ position: fixed; width: 50px; bottom: 50px; right: 10px; border: 1px solid #e9e9e9; background-color: rgba(255, 255, 255, .7); z-index: 99; transition: all .4s .3s; visibility: hidden; opacity: 0; }
+.quick-menu.on{ visibility: visible; opacity: 1; }
+.quick-menu .btn-chat{ display: flex; flex-direction: column; align-items: center; padding: 10px; font-size: 11px; border-bottom: 1px solid #e9e9e9; color: #595959; }
+.quick-menu .btn-chat img{ padding-bottom: 10px; }
+.quick-menu .btn-gotop{ padding: 15px; }

@@ -68,7 +68,7 @@ $(function(){
     })
 
 
-    // @창 여닫기
+    // @햄버거바 창 여닫기
   $('.group-gnb .item').click(function(e){
     e.preventDefault();
     if ($(this).hasClass('on')) {
@@ -80,6 +80,8 @@ $(function(){
   })
 
 //상단 btn버튼 상호작용
+
+//-카테고리버튼
   $('.btn-category').click(function(){
     $('.side-nav').toggleClass('on')
     $('.dimmed').toggleClass('on')
@@ -99,6 +101,8 @@ $(function(){
     $('body').css({'overflow':'auto','height':'auto'})
   }
 
+
+//-서치버튼
   $('.btn-search').click(function(){
     $('.side-search').toggleClass('on')
     disableBodyScroll();
